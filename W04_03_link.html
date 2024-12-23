@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Link Examples</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+    a{
+      color: brown;
+      text-decoration: none;
+    }
+    a:hover{
+      color: rgb(55, 0, 255);
+      text-decoration: underline;
+    }
+    .container {
+      background-color: rgba(137, 156, 150, 0.432);
+      margin: auto;
+      width: 800px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: rgb(255, 255, 255);
+      margin-top: 10px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 2px 4px rgb(73, 70, 30);
+    }
+    .back-home{
+      background-color: rgb(255, 255, 255);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Start Code Here -->
+  <div class="container">
+    <h1>Various Links</h1>
+    <hr />
+    <h2>External Links</h2>
+    <div class="card">
+      <a href="https://www.wikipedia.org/"target="_blank">Visit Wikipediad</a>
+
+      <p>target="_blank"เปิดลิงก์ใน แท็บใหม่ หรือ หน้าต่างใหม่ของเบราว์เซอร์</p>
+      
+    </div>
+    <div class="card">
+      <a href="https://www.google.com"target="_self">Visit Google</a>
+      <p>target="_self"เปิดลิงก์ใน แท็บหรือหน้าต่างเดิม(ค่าเริ่มต้น)</p>
+      
+    </div>
+    <div class="card">
+      <a href="https://www.youtube.com"target="_parent" >Visit Youtube</a>
+      <p>target="_parent"ลิงก์จะโหลดในเฟรมแม่ของเฟรมปัจจุบัน(ถ้าไม่มีเฟรมแม่ จะโหลดในแท็บปัจจุบัน)</p>
+      
+    </div>
+    <div class="card">
+      <a href="https://www.facebook.com/"target="_top">Visit Facebook</a>
+      <p>target="_top"ลิงก์จะโหลดในหน้าต่างหลักของเบราวเซอร์โดยละทิ้งโครงสร้างเฟรม ใช้ในกรณีที่ต้องการเปิดลิงก์ในหน้าต่างหลัก
+      แม้ว่าจะอยู่ในเฟรมย่อย</p>
+    </div>  
+    <hr />
+    <h2>Internal Links</h2>
+    <p>- ใช้แอตทริบิวต์ href และ id ในการสร้างลิงก์ภายในเว็บไซต์</p>
+    <a href="#jummp1">Jump to Section</a>
+    <h3 id="Jump1">This is the position as your Jump.</h3>
+    <hr />
+    <h2>Email Links</h2>
+    <p>
+      - ใช้ mailto: หน้าที่ต้องการส่งอีเมล์ไป
+    </p>
+      <a href="664230021@webmail.npru.ac.th">Seand an Email</a>
+    <hr />
+    <H2>  Download Links</H2>
+    <P>- ใช้แอตทริบิวต์ download เพื่อสร้างลิงก์ดาวน์โหลด หลัง href</P>
+    <a href="index.html"download>  Download Text File</a>
+    <hr>
+    <div class="back-home">
+    <a href="index.html">back to home</a>
+  </div> 
+  </div>
+
+  <!-- End Code -->
+
+  <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+    Back to Home
+</pre>
+</body>
+
+</html>
