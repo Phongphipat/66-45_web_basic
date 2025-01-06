@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+    <style>
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .b-image-contain {
+        width: 300px;
+        height: 100px;
+        object-fit: contain;
+        border: 1px solid black;
+      }
+      .b-image-fill {
+        width: 300px;
+        height: 100px;
+        object-fit: fill;
+        border: 1px solid black;
+      }
+      .b-image-cover {
+        width: 300px;
+        height: 100px;
+        object-fit: cover;
+        border: 10px solid rgb(251, 255, 0);
+      }
+        .s-image-contain {
+        width: 300px;
+        height: 200px;
+        object-fit: contain;
+        border: 1px solid black;
+      }
+      .s-image-fill {
+        width: 300px;
+        height: 200px;
+        object-fit: fill;
+        border: 1px solid black;
+      }
+      .s-image-cover {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border: 1px solid rgb(0, 0, 0);
+      }
+      .gallery {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url('images/bg_christmas.webp');          /* รูปภาพพื้นหลัง */
+        background-repeat:  no-repeat;      /* ไม่ให้ซ้ำ */
+        background-attachment: fixed;      /* fixed คือ ไม่เลื่อน  */
+        background-size: cover;          / ปรับขนาดให้เต็มหน้าจอ */
+      }
+    </style>
+</head>
+<body>
+    <h1>My Favorite Animal</h1>
+<img src="https://www.wreathstation.com/wp-content/uploads/2019/07/%E0%B8%9E%E0%B8%A7%E0%B8%87%E0%B8%AB%E0%B8%A3%E0%B8%B5%E0%B8%94%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B8%AA%E0%B8%94-02-1024x768.jpg" alt="flower" width="300">
+<p>This is an image of my favorite from Website.</p>
+<img src="/images/rabbit3.jpg" alt="กระต่าย" width="300">
+<p>รูปภาพนี้เป็นภาพจากคอมพิวเตอร์ของเรา</p>
+<hr>
+
+<h1>Click the Image : Link for Open new window</h1>
+<a href="https://www.wikipedia.org" target="_blank">
+    <img src="https://yt3.googleusercontent.com/ytc/AIdro_lZcfO7j_tHuc3hSkMq7J4PvmRPrxUKQuqhcy5jV_DqMg=s900-c-k-c0x00ffffff-no-rj" alt="A clickable image" width="250">
+</a>
+
+  <hr>
+
+  <h1>Image Alignment</h1>
+  <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfmD3pAudzxt7xsN-Pta7W0AKrlJCxl4rh3UZx88Xecujo_FNnyQddXqVUKnvQDT_K6tA&usqp=CAU" alt="Left aligned image" width="150" class="left">This image is aligned to the left.</p>
+  <p><img src="https://via.placeholder.com/150" alt="Right aligned image" class="right">This image is aligned to the right.</p>
+  <p><img src="https://via.placeholder.com/300" alt="Center aligned image" class="center">This image is centered.</p>
+
+  <hr>
+
+  <h1>Object-Fit: Image Bigger than Container (300x100)</h1>
+  <div>
+    <img src="/images/rabbit3.jpg" alt="Sample Image" class="b-image-contain">
+    <p>contain: ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ อาจมีพื้นที่ว่างถ้าอัตราส่วนไม่ตรงกัน</p>
+    <br>
+  </div>
+  <div>
+    <img src="/images/rabbit3.jpg" alt="Sample Image" class="b-image-fill">
+    <p>fill (ค่าเริ่มต้น): ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา อาจทำให้เนื้อหาถูกยืดหรือบีบ</p>
+    <br>
+  </div>
+  <div>
+    <img src="/images/rabbit3.jpg" alt="Sample Image" class="b-image-cover">
+    <p>cover: ปรับขนาดเนื้อหาให้เติมเต็มกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ ส่วนที่เกินจะถูกตัดออก</p>
+    <br>
+  </div>
+
+
+  <hr>
+
+  <h1>Object-Fit: Image Smaller than Container</h1>
+  <div>
+    <img src="https://cdn10.bigcommerce.com/s-2t0b6/products/210/images/371/_2535435_orig__96436.1616125179.224.300.png?c=2" alt="Sample Image" class="s-image-fill">
+    <p>fill (ค่าเริ่มต้น): ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา อาจทำให้เนื้อหาถูกยืดหรือบีบ</p>
+  </div>
+
+  <div>
+    <img src="https://cdn10.bigcommerce.com/s-2t0b6/products/210/images/371/_2535435_orig__96436.1616125179.224.300.png?c=2" alt="Sample Image" class="s-image-contain">
+    <p>contain: ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ อาจมีพื้นที่ว่างถ้าอัตราส่วนไม่ตรงกัน</p>
+  </div>
+
+  <div>
+    <img src="https://cdn10.bigcommerce.com/s-2t0b6/products/210/images/371/_2535435_orig__96436.1616125179.224.300.png?c=2" alt="Sample Image" class="s-image-cover">
+    <p>cover: ปรับขนาดเนื้อหาให้เติมเต็มกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ ส่วนที่เกินจะถูกตัดออก</p>
+  </div>
+
+
+  <hr>
+
+
+  <h1>Image Gallery</h1>
+  <div class="gallery">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ056f80kSTTfNyfCIorEiXFfLVlVVj5BPzwg&s" alt="Image 1" height="100">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ056f80kSTTfNyfCIorEiXFfLVlVVj5BPzwg&s" alt="Image 2" height="50">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ056f80kSTTfNyfCIorEiXFfLVlVVj5BPzwg&s" alt="Image 3" >
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ056f80kSTTfNyfCIorEiXFfLVlVVj5BPzwg&s" alt="Image 4" height="30">
+  </div>
+
+  <hr>
+
+
+  <h1>FlexBox: </h1>
+  <div class="ex-flex">
+    <img src="images/flex.jpg" alt="Image 1">
+    <br>
+  </div>
+
+  <hr>
+  <h1>FlexBox: justify-content</h1>
+  <div class="ex-flex">
+    <img src="images/justify-content.jpg" alt="Image 1">
+    <br>
+  </div>
+  
+  <hr>
+
+
+  <div class="back-to-home">
+    <a href="index.html">Back to Home</a>
+  </div>
+</body>
+</html>

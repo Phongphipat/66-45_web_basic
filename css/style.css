@@ -1,0 +1,59 @@
+header {
+
+}
+
+.container {
+    background-color: #c41616;
+}
+
+footer {
+    background-color: #f1c40f;
+    height: 100px;
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-menu {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 0 0 24px;
+}
+
+.btn {
+
+}
+
+.btn-primary {
+    background-color: #022ef3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: #0004ff; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
