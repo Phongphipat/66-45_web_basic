@@ -42,8 +42,6 @@ body {
     text-decoration: none;
     color: black;
 }
-
-/* Photo Grid */
 .photo-grid {
     /* display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -111,12 +109,6 @@ img{
 .m-textp{
     padding-top: 1.5rem;
 }
-
-/* asdsadsadsadsa */
-
-
-
-
 button{
     font-size: 1.1rem;
     padding: 1rem;
@@ -125,13 +117,10 @@ button{
     color: black;
 
 }
-
-
 .m-btn{
     padding-top: 2rem;
     padding-left: 1.5rem;
 }
-
 button:hover{
     background-color: white;
     color: black;
@@ -139,8 +128,6 @@ button:hover{
     transition: 0.5s;
     border-radius: 1rem;
 }
-
-
 .typewriter h1 {
     color:black;
     font-family: monospace;
