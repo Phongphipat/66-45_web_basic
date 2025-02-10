@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Itim', cursive;
+            background: rgb(37,37,203);
+background: linear-gradient(90deg, rgba(37,37,203,1) 35%, rgba(0,212,255,1) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        }
+        .container{
+         
+            width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+          
+        }
+        .left-side{
+            width: 50%;
+            padding: 20px;
+            color: rgb(255, 255, 255);
+            background-image: url('https://s359.kapook.com/pagebuilder/474fcaf8-2f02-4056-842b-a021e2a122cd.jpg');
+            background-blend-mode: darken;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+             border-radius: 10px;
+             text-transform: uppercase;
+             display: flex;
+             align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            
+        }
+        .right-side{
+            width: 40%;
+            padding: 40px;
+            background: rgb(255, 255, 255);
+
+             border-radius: 10px;
+             form{
+                 label{
+                        display: block;
+                        font-weight: bold;
+                        margin-bottom: 4px;
+
+                 }
+                    input{
+                        width: 100%;
+                        padding: 4px;
+                        margin: 10px 0;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                    }
+             }
+        }
+        button{
+            width: 100%;
+            padding: 8px;
+            background: rgb(37,37,203);
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+        <h1>information technology</h1>
+        <p>ยินดีต้อนรับเข้าสู่เว็บไซต์การเรียนการสอน</p> 
+    </div>
+        <div class="right-side">
+            <h2>Login</h2>
+            <form action="W12_01_login.php" method="post">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Forgot <a href="#">Password?</p></a>
+            <p>Don't have an accunt?<a href="#">Resgister</a></p>
+        </div>
+        
+
+    </div>
+</body>
+</html>
