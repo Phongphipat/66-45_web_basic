@@ -1,57 +1,113 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(150, 158, 228);
+}
 header {
+  margin: 0 40px;
 }
 .container {
-    background-color: #c41616;
+  width: 70%;
+  margin: auto;
 }
-
+.crad {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+.crad img {
+  width: 100%;
+  border-radius: 15px;
+}
 footer {
-    background-color: #f1c40f;
-    height: 100px;
-}
+  background-color: rgb(110, 132, 255);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 0;
+  margin-top: 15px;
 
-nav {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-menu {
-    display: flex;
-    align-items: center;
+  p {
+    color: #ffffff;
+  }
 }
 
 .logo-name {
-
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-
 .menu ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 0 0 0 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 0 0 24px;
 }
-
 .btn {
-
 }
-
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .btn-primary {
-    background-color: #022ef3;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
+  background-color: rgb(55, 75, 255);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
 }
-
+.btn-primary:hover {
+  background-color: rgb(7, 31, 241);
+}
 .btn-secondary {
-    background-color: #ffffff;
-    color: #0004ff; 
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(55, 75, 255);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+}
+.btn-secondary:hover {
+  background-color: rgb(85, 85, 85);
+  color: rgb(255, 255, 255);
+}
+.crad button {
+  background-color: rgb(35, 168, 75);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  margin-top: 10px;
+}
+.crad button:hover {
+  background-color: rgb(6, 88, 31);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  margin-top: 10px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+}
+.menu ul li a:hover {
+  text-decoration: none;
+  color: rgb(7, 31, 241);
+  font-size: 1rem;
 }
