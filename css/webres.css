@@ -1,11 +1,11 @@
 :root {
   --primary-color: #a228c0;
-  --secondary-color: #bfd64e;
+  --secondary-color: #000000;
   --background-color: rgb(228, 228, 228);
   --text-color-normal: #333;
   --box-shadow: 0 2px 10px #000;
   --base-white-color: #fff;
-  --blackground-colorbox: #ffbd7a;
+  --blackground-colorbox: #ff8000;
 }
 * {
   margin: 0;
@@ -143,7 +143,6 @@ nav {
 .left-side {
   margin-left: 150px;
   width: 50%;
-
   h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -170,7 +169,7 @@ nav {
   width: 50%;
   margin-right: 150px;
   img {
-    width: 100%;
+    width: 50%;
     margin-left: 250px;
     margin-top: 50px;
     padding-bottom: 50px;
@@ -181,7 +180,7 @@ nav {
   width: 50%;
 
   img {
-    width: 70%;
+    width: 100%;
     margin-top: 50px;
     padding-bottom: 50px;
   }
@@ -342,6 +341,12 @@ footer {
   display: none;
 }
 
+.hero2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Responsive  for mobile*/
 @media screen and (max-width: 768px) {
   header {
@@ -352,7 +357,6 @@ footer {
   }
   .hero {
     flex-direction: column;
-    position: absolute;
   }
   .left-side,
   .right-side {
@@ -377,17 +381,14 @@ footer {
       .hero2 {
         display: flex;
         flex-direction: column-reverse;
-        position: absolute;
         left-side2 {
           margin-left: 0;
           width: 100%;
-          position: absolute;
         }
         .right-side2 {
           width: 100%;
           margin-left: 0;
           margin-right: 0;
-          position: absolute;
         }
       }
     }
@@ -455,58 +456,4 @@ footer {
     right: 30px;
     cursor: pointer;
   }
-}
-
-.m-cus {
-  width: 100vh; /* ทำให้กว้างเต็มจอ */
-  min-height: 20vh; /* ทำให้สูงเต็มจอ */
-  background-color: #d87329; /* สีส้ม */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.m-cus h2 {
-  color: #a600ff; /* สีม่วงสำหรับหัวข้อ */
-  font-weight: bold;
-}
-
-.m-cus p {
-  color: #ffffff; /* ข้อความสีขาว */
-}
-
-.m-cus .btn {
-  background-color: #a600ff; /* ปุ่มสีม่วง */
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.m-cus .btn:hover {
-  background-color: #8a00d4; /* สีเข้มขึ้นเมื่อ hover */
-}
-
-.ab1 {
-  position: absolute;
-}
-
-.ab2 {
-  position: absolute;
-}
-
-.m-text2 {
-  padding-bottom: 30rem;
-}
-
-.text2 {
-  width: 40rem;
-}
-
-.m-s2 {
-  position: absolute;
-  padding-left: 8rem;
-  padding-bottom: 10rem;
-  width: 80rem;
 }
