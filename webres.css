@@ -143,7 +143,7 @@ nav {
 .left-side {
   margin-left: 150px;
   width: 50%;
-  
+
   h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -179,7 +179,7 @@ nav {
 .left-side2 {
   margin-left: 150px;
   width: 50%;
-  
+
   img {
     width: 70%;
     margin-top: 50px;
@@ -457,17 +457,17 @@ footer {
   }
 }
 
-
-
 .m-cus {
-  
-    background-color: #D87329; /* สีส้ม */
-    
-   
+  width: 100vh; /* ทำให้กว้างเต็มจอ */
+  min-height: 20vh; /* ทำให้สูงเต็มจอ */
+  background-color: #d87329; /* สีส้ม */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .m-cus h2 {
-  color: #A600FF; /* สีม่วงสำหรับหัวข้อ */
+  color: #a600ff; /* สีม่วงสำหรับหัวข้อ */
   font-weight: bold;
 }
 
@@ -476,7 +476,7 @@ footer {
 }
 
 .m-cus .btn {
-  background-color: #A600FF; /* ปุ่มสีม่วง */
+  background-color: #a600ff; /* ปุ่มสีม่วง */
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -485,32 +485,26 @@ footer {
 }
 
 .m-cus .btn:hover {
-  background-color: #8A00D4; /* สีเข้มขึ้นเมื่อ hover */
+  background-color: #8a00d4; /* สีเข้มขึ้นเมื่อ hover */
 }
 
-
-
-.ab1{
+.ab1 {
   position: absolute;
 }
 
-
-.ab2{
+.ab2 {
   position: absolute;
 }
 
-.m-text2{
+.m-text2 {
   padding-bottom: 30rem;
 }
 
-.text2{
+.text2 {
   width: 40rem;
- 
 }
 
-
-
-.m-s2{
+.m-s2 {
   position: absolute;
   padding-left: 8rem;
   padding-bottom: 10rem;
