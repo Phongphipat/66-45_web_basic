@@ -4,8 +4,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Intro</title>
+   <!-- <link rel="stylesheet" href="css/bootstrap.min.css">-->
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      .container{
+       // background-color: rgb(0, 219, 219);
+        //text-align: center;
+        margin-top: 20px;
+        color: blue;
+        ul{
+            text-align: left;
+        }
+
+      }
+      .container-fluid{
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        margin-top: 20px;
+        color: blue;
+        ul{
+            text-align: left;
+        }
+      }
+    </style>
+
 </head>
 <body>
-    
+
+    <h1>Bootstrap Intro</h1>
+    <hr>
+    <h2>เปรียนเทียบ .container Vs .container-fluid</h2>
+   <!-- .container -->
+    <div class="container">
+    <h1>Container</h1>
+    <p>กำหนดค่า property เพิ่มในการจัดการ style โดยไม่ใช้ class จาก bootstrap</p>
+    <ul>
+        <li>background-color</li>
+        <li>text-align</li>
+        <li>padding</li>
+        <li>margin-top</li>
+        <li>color</li>
+    </ul>
+     </div>
+   <!-- .container-fluid -->
+    <div class="container-fluid">
+    <h1>container-fluid</h1>
+    <p>กำหนดค่า property เพิ่มในการจัดการ style โดยไม่ใช้ class จาก bootstrap</p>
+    <ul>
+        <li>background-color</li>
+        <li>text-align</li>
+        <li>padding</li>
+        <li>margin-top</li>
+        <li>color</li>
+    </ul>
+
+    </div>
+
+    <!-- bootstrap -->
+     <h1>ใช้งานคำสั่ง จาก bootstrap</h1>
+     <div class="container bg-dark text-info text-center mt-5 p-5">
+        <h1>Container</h1>
+        <p>กำหนดค่า property เพิ่มในการจัดการ style โดยไม่ใช้ class จาก bootstrap</p>
+        <ul>
+            <li>background-color  => bg-dark</li>
+            <li>text-align => text-center</li>
+            <li>padding => p-5</li>
+            <li>margin-top => mt-5</li>
+            <li>color => text-info</li>
+        </ul>
+         </div>
+
+         <div class="container-fluid bg-dark text-white text-center p-3 ">
+            <h1>Grid Basic</h1>
+            <p>แบ่งคอร์ลัมน์</p>
+            
+             </div>
+             <div class="row text-center">
+                <div class="col-2 bg-danger">sunday</div>
+                <div class="col-2 bg-warning">Monday</div>
+                <div class="col-4 bg-secondary">Tueday</div>
+                <div class="col-4 bg-success">wednesday</div>
+             </div>
+
+             <!-- Grid % Card & Button -->
+             <div class="container-fluid text-white p-3 bg-">
+                <h1>Grid % Card & Button</h1>
+             </div>
+     
+             <!--container-->
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h3>colum 1</h3>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, tenetur?
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h3>colum 2</h3>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, tenetur?
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h3>colum 3</h3>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, tenetur?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <!-- 3 columns with card & button-->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3>colum 1</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, odit</p>
+                                <button class="btn btn-primary">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3>colum 2</h3>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, tenetur?</p>
+                                <button class="btn btn-outline-success">Read More</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3>colum 3</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, tenetur?</p>
+                                <div class="d-grid gap-3">
+                                <button class="btn btn-danger btn-block disabled">Read More</button>
+                                <button class="btn btn-outline-info btn-block">Read More</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 columns with card & button&IMG-->
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <img class="card-img-top"" src="images/rabbit3.jpg" alt="">
+                            <div class="card-body">
+                                <h3>colum 1</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, odit</p>
+                                <button class="btn btn-primary">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <img class="card-img-top"" src="images/rabbit3.jpg" alt="">
+                            <div class="card-body">
+                                <h3>colum 2</h3>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, tenetur?</p>
+                                <button class="btn btn-outline-success">Read More</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <img class="card-img-top"" src="images/rabbit3.jpg" alt="">
+                            <div class="card-body">
+                                <h3>colum 3</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, tenetur?</p>
+                                <div class="d-grid gap-3">
+                                <button class="btn btn-danger btn-block disabled">Read More</button>
+                                <button class="btn btn-outline-info btn-block">Read More</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                
+                                
+                                
+
+  <!--   <script src="Javascript/bootstrap.bundle.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
