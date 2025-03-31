@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="assets/css/owl.css" />
     <link rel="stylesheet" href="assets/css/lightbox.css" />
   </head>
-
   <body>
     <div id="page-wraper">
       <!-- Sidebar Menu -->
@@ -50,7 +49,6 @@
           </div>
         </div>
       </div>
-
       <section class="section about-me" data-section="section1">
         <div class="container">
           <div class="section-heading">
@@ -160,12 +158,6 @@
             Nakhon Pathom Rajabhat University</div>
         </div>
       </section>
-
-      
-
-
-    <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -174,7 +166,6 @@
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/custom.js"></script>
     <script>
-      //according to loftblog tut
       $(".main-menu li:first").addClass("active");
 
       var showSection = function showSection(section, isAnimate) {
@@ -213,12 +204,10 @@
           }
         });
       };
-
       $(".main-menu").on("click", "a", function(e) {
         e.preventDefault();
         showSection($(this).attr("href"), true);
       });
-
       $(window).scroll(function() {
         checkSection();
       });
